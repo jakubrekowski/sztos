@@ -1,0 +1,23 @@
+type: 'application'
+language: 'typescript'
+
+project:
+  name: 'webpage'
+  description: 'Frontpage of whole project'
+  channel: '#frontend'
+  maintainers: ['jakubrekowski', 'Quazawaza']
+
+
+tasks:
+  build:
+    command: 'vite build'
+    inputs:
+      - 'src/**/*'
+    outputs:
+      - 'dist'
+  dev:
+    command: 'vite dev'
+    inputs:
+      - 'src/**/*'
+    outputs:
+      - 'dist'
